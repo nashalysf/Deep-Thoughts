@@ -1,10 +1,10 @@
 :root {
-  --primary: #497573;
-  --secondary: #99f7f2;
-  --tertiary: #b2c2c1;
-  --quatrinary: #cadbda;
-  --light: #e1f5f4;
-  --dark: #6c7575;
+  --primary: #8EC3B0;
+  --secondary: #9ED5C5;
+  --tertiary: #ECB390;
+  --quatrinary: #e1f5f4;
+  --light: #ffffff;
+  --dark: #DEF5E5;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
@@ -48,6 +48,7 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  color: var(--light);
 }
 
 h2 {
@@ -56,6 +57,7 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+  color: var(--primary);
 }
 
 h4 {
@@ -64,6 +66,7 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
+  color: var(--primary);
 }
 
 h6 {
@@ -76,7 +79,7 @@ p {
 }
 
 a {
-  color: var(--dark);
+  color: var(--light);
   text-decoration: none;
 }
 
@@ -115,12 +118,14 @@ nav a:hover {
   margin: 5px 0;
   border-radius: var(--border-radius);
   border: none;
-  color: var(--dark);
+  color: var(--light);
   outline: none;
   background-color: var(--secondary);
   transition: all 0.5s;
 }
-
+button a.btn{
+  color: var(--light);
+}
 .btn:hover,
 .pill:hover {
   color: var(--secondary);
@@ -137,11 +142,11 @@ nav a:hover {
   border: 3px solid var(--dark);
   border-radius: var(--border-radius);
   background-color: var(--light);
-  color: var(--dark);
+  color: var(--primary);
 }
 
 .card-header {
-  color: var(--secondary);
+  color: var(--primary);
   margin: 0;
   background-color: var(--dark);
   padding: 0.625rem;
@@ -151,7 +156,12 @@ nav a:hover {
 .card-body {
   padding: 2.5%;
   font-size: 1.4rem;
+  color: var(--primary);
 }
+.card-body p{
+  color: var(--primary)!important;
+  background-color: var(--light);
+} 
 
 /* FORM */
 .form-label,
@@ -287,6 +297,7 @@ nav a:hover {
 /* Margin - all sides */
 .m-0 {
   margin: 0;
+  color: var(--primary);
 }
 
 .m-1 {
@@ -764,7 +775,7 @@ nav a:hover {
 }
 
 .text-light {
-  color: var(--light);
+  color: var(--primary);
 }
 
 .text-dark {
