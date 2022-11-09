@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  process.env.MONGODB_URI || "https://git.heroku.com/lit-harbor-12267.git",
+  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/deepthoughtscluster",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
